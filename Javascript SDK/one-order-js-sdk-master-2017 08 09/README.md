@@ -1,4 +1,4 @@
-# OO client
+# ONE Order (OO) client
 
 A Node.js client wrapper for IATA's One Order API.
 
