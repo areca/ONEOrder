@@ -7,13 +7,13 @@ A Node.js client wrapper for IATA's One Order API.
 Use npm to install from repo:
 
 ```
-npm install iata-ndc/ndc-js-sdk
+npm install iata-ndc/ONEOrder
 ```
 
 Or just clone with git:
 
 ```
-git clone https://github.com/iata-ndc/ndc-js-sdk.git
+git clone git clone https://github.com/iata-ndc/ONEOrder.git
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ Create a config file and save it as config.json:
 
 ```json
 {
-  "endpoint": "http://iata.api.mashery.com/athena/api",
+  "endpoint": "http://iata.api.mashery.com/Zeus/NDC",
   "APIAuthKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
 }
 ```
