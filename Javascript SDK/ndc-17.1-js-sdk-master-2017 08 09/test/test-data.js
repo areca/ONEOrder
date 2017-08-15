@@ -45,8 +45,8 @@ TestData.config = [
         "currencyCode": "USD",
         "countryCode": "US",
         "cityCode": "NYC",
-        "providerName": "IATA NDC GATEWAY",
-        "endpoint": "http://35.187.57.17:8700/ndcgateway",
+        "providerName": "ZEUS NDC GATEWAY",
+        "endpoint": "http://iata.api.mashery.com/Zeus/NDC",
         "APIAuthKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
         "agent": {
             "IATANumber": "0000XXXX",
@@ -56,8 +56,8 @@ TestData.config = [
             "email": "me@my.domain.com"
         },
         "sender": {
-            "id": "9A",
-            "name": "Athena Air",
+            "id": "Z9",
+            "name": "Zeus Airlines",
             "type": "Airline Agent",
             "email": "test@example.org",
             "IATANumber": "00000001"

@@ -7,13 +7,13 @@ A Node.js client wrapper for IATA's NDC API.
 Use npm to install from repo:
 
 ```
-npm install iata-ndc/ndc-js-sdk
+npm install iata-ndc/ONEOrder
 ```
 
 Or just clone with git:
 
 ```
-git clone https://github.com/iata-ndc/ndc-js-sdk.git
+git clone https://github.com/iata-ndc/ONEOrder.git
 ```
 
 If you do not already have the debug module installed then:
@@ -31,8 +31,8 @@ Create a config file and save it as config.json:
   "currencyCode": "USD",
   "countryCode": "US",
   "cityCode": "NYC",
-  "providerName": "IATA NDC GATEWAY",
-  "endpoint": "<http://iata.api.mashery.com/athena/api>
+  "providerName": "ZEUS NDC GATEWAY",
+  "endpoint": "<http://iata.api.mashery.com/Zeus/NDC>
 ",
   "APIAuthKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
   "agent": {
@@ -44,21 +44,21 @@ Create a config file and save it as config.json:
   },
   "sender": {
     "id": "9A",
-    "name": "Athena Air",
+    "name": "Zeus Airlines",
     "type": "Airline Agent",
     "email": "test@example.org",
     "IATANumber": "00000001"
   },
   "airline": {
-    "id": "9A",
-    "name": "Athena Air"
+    "id": "Z9",
+    "name": "Zeus Airlines"
   }
 }
 ```
 
 Remember to replace the string of "xxx" above with your API Key.
 
-And then to make a request create a new file, for example athena.js and put the following contents inside:
+And then to make a request create a new file, for example zeus.js and put the following contents inside:
 
 ```javascript
 var NDC = require('ndc-client');
@@ -124,6 +124,6 @@ message.request(function (err, response) {
 });
 ```
 
-Finally execute it on the command line with "node athena.js"
+Finally execute it on the command line with "node zeus.js"
 
 For further details on each message parameters, have a look to the test folder in the `test-data.js` file, with examples.
