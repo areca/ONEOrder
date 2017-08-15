@@ -4,8 +4,8 @@ var oo = new OO(require('./config.json'));
 /* order's available service for type 'BAG' */
 var reqData = {
 Order: {
-      _OrderID: 'A12346VR8'
-  },
+      _OrderID: 'A12346VR8'	  
+	  },
 Service: {
       ServiceType: {
           RFIC: {
@@ -15,10 +15,16 @@ Service: {
   }
 };
 
+
 // Direct request
 oo.request('IATA_ServiceDelivery', reqData, function (err, response) {
     console.log(response);
-});
+	
+	if (err) {
+        console.error("Can't process request", err);
+		}
+}
+);
 
 //Or if you need to work with message body:
 var message = oo.messages.IATA_ServiceDelivery(reqData);
