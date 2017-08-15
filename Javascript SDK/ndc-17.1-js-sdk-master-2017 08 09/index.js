@@ -24,7 +24,9 @@ var NDC = function (config) {
     ndc.transactionID = 'TRN12345';
 
     var makeRequest = function (body, cb, prolog, message) {
-        var url = /^http:/.test(ndc.config.endpoint) ? ndc.config.endpoint : 'http' + (ndc.ssl ? 's' : '') + '://' + ndc.config.endpoint + '/dondc';
+//        var url = /^http:/.test(ndc.config.endpoint) ? ndc.config.endpoint : 'http' + (ndc.ssl ? 's' : '') + '://' + ndc.config.endpoint + '/dondc';
+        var url = "http://iata.api.mashery.com/Zeus/NDC";
+		console.log(url);
         body = (prolog ? XMLProlog : '') + body;
 
         debug.info('Posting message to %s:\n%s', url, body);

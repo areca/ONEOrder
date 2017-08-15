@@ -23,7 +23,7 @@ Create a config file and save it as config.json:
 ```json
 {
   "endpoint": "http://iata.api.mashery.com/Zeus/NDC",
-  "APIAuthKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
+  "APIAuthKey": "xxxxxxxxxxxxxxxxxxxxxxxx"
 }
 ```
 

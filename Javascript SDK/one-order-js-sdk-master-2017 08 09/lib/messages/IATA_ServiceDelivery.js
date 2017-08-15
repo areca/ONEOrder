@@ -4,7 +4,6 @@ var ServiceDelivery = function(data) {
         Service: data.Service,
         Order: data.Order
     };
-
 };
 
 module.exports = ServiceDelivery;
