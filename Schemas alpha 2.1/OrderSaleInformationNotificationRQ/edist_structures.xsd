@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2014 rel. 2 sp1 (x64) (http://www.altova.com) by JRT (JR Technologies, Inc.) -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified"  version="0.001 " id="IATA_17.1_OneOrder_A3_2.1">
+<!-- edited with XMLSpy v2014 (x64) (http://www.altova.com) by JRT (JR Technologies, Inc.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.001 " id="IATA_17.1_OneOrder_A4_2.1">
 	<xsd:annotation>
 		<xsd:documentation xml:lang="en">EDIST XML Specification Base Structures. Includes base types for EDIST XML data objects, utility xml objects and core simple type definitions.</xsd:documentation>
 	</xsd:annotation>

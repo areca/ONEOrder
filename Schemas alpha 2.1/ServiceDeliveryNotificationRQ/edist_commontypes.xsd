@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2014 (x64) (http://www.altova.com) by JRT (JR Technologies, Inc.) -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions" elementFormDefault="qualified" attributeFormDefault="unqualified"  version="0.001 " id="IATA_17.1_OneOrder_A3_2.1">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.001 " id="IATA_17.1_OneOrder_A4_2.1">
 	<xsd:annotation>
 		<xsd:documentation xml:lang="en">EDIST XML SPECIFICATION: Common XML Objects shared by all EDIST Domains.</xsd:documentation>
 	</xsd:annotation>
@@ -1197,7 +1197,7 @@ Note: This is the address verification response code (AVS) when the ticketing ag
 Note: This capability may not be supported by all NDC-enabled systems or may be supported by bilateral agreement only. If supported, the technical implementation of this capability is not dictated by this specification.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="ApprovalType" type="CodesetType" minOccurs="0">
+					<xsd:element name="ApprovalType" type="IATA_CodeType" minOccurs="0">
 						<xsd:annotation>
 							<xsd:documentation source="description" xml:lang="en">Approval Code Method. Example: M (Manual)
 
@@ -2204,220 +2204,6 @@ Encoding Scheme: ISO 3166-1 (two character) Country Code</xsd:documentation>
 			</xsd:element>
 			<xsd:element ref="AddressContact" minOccurs="0"/>
 		</xsd:sequence>
-	</xsd:complexType>
-	<!--====================================================
-===  P A S S E N G E R
-====================================================-->
-	<xsd:element name="Passenger">
-		<xsd:annotation>
-			<xsd:documentation source="description" xml:lang="en">Passenger.</xsd:documentation>
-		</xsd:annotation>
-		<xsd:complexType>
-			<xsd:complexContent>
-				<xsd:extension base="PassengerDetailType"/>
-			</xsd:complexContent>
-		</xsd:complexType>
-	</xsd:element>
-	<xsd:complexType name="PassengerSummaryType">
-		<xsd:annotation>
-			<xsd:documentation source="description" xml:lang="en">A data type for SUMMARY PASSENGER representation.</xsd:documentation>
-		</xsd:annotation>
-		<xsd:complexContent>
-			<xsd:extension base="TravelerSummaryType">
-				<xsd:sequence>
-					<xsd:element name="Contact" maxOccurs="unbounded">
-						<xsd:annotation>
-							<xsd:documentation>Contact detail.</xsd:documentation>
-						</xsd:annotation>
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element ref="AddressContact" minOccurs="0"/>
-								<xsd:element ref="EmailContact" minOccurs="0">
-									<xsd:annotation>
-										<xsd:documentation>Email address details, including application (I.e. home, business, etc.).</xsd:documentation>
-									</xsd:annotation>
-								</xsd:element>
-								<xsd:element ref="OtherContactMethod" minOccurs="0"/>
-								<xsd:element ref="PhoneContact" minOccurs="0"/>
-								<xsd:element name="Name" minOccurs="0">
-									<xsd:annotation>
-										<xsd:documentation source="description" xml:lang="en">Passenger Name information.
-
-Note: Detailed Name information, such as prefix, title and suffix, are specified in PassengerMetadata.</xsd:documentation>
-									</xsd:annotation>
-									<xsd:complexType>
-										<xsd:sequence>
-											<xsd:element name="Surname">
-												<xsd:annotation>
-													<xsd:documentation source="description" xml:lang="en">Family name, last name
-
-Example: SMITH</xsd:documentation>
-												</xsd:annotation>
-												<xsd:complexType>
-													<xsd:simpleContent>
-														<xsd:extension base="ProperNameSimpleType"/>
-													</xsd:simpleContent>
-												</xsd:complexType>
-											</xsd:element>
-											<xsd:element name="Given" minOccurs="0" maxOccurs="5">
-												<xsd:annotation>
-													<xsd:documentation source="description" xml:lang="en">Given name, first name or names</xsd:documentation>
-												</xsd:annotation>
-												<xsd:complexType>
-													<xsd:simpleContent>
-														<xsd:extension base="ProperNameSimpleType"/>
-													</xsd:simpleContent>
-												</xsd:complexType>
-											</xsd:element>
-											<xsd:element name="Title" type="xsd:string" minOccurs="0">
-												<xsd:annotation>
-													<xsd:documentation>Name Title. Examples: MR, MRS, DR</xsd:documentation>
-												</xsd:annotation>
-											</xsd:element>
-											<xsd:element name="SurnameSuffix" minOccurs="0">
-												<xsd:annotation>
-													<xsd:documentation>Surname Suffixes and / or Letters, Examples:Jr., Sr., III., Ret., Esq., Ph.D., M.D.</xsd:documentation>
-												</xsd:annotation>
-											</xsd:element>
-											<xsd:element name="Middle" type="xsd:string" minOccurs="0" maxOccurs="3">
-												<xsd:annotation>
-													<xsd:documentation source="description" xml:lang="en">Middle name or initial.  Examples: G, GEORGE</xsd:documentation>
-												</xsd:annotation>
-											</xsd:element>
-										</xsd:sequence>
-									</xsd:complexType>
-								</xsd:element>
-							</xsd:sequence>
-							<xsd:attribute name="ContactType">
-								<xsd:annotation>
-									<xsd:documentation>Type of contact. For e.g. Primary or Emergency contact.</xsd:documentation>
-								</xsd:annotation>
-							</xsd:attribute>
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="FQTVs" minOccurs="0">
-						<xsd:annotation>
-							<xsd:documentation source="description" xml:lang="en">Traveler Frequent Traveler Program(s).</xsd:documentation>
-						</xsd:annotation>
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element ref="AirlineID" minOccurs="0">
-									<xsd:annotation>
-										<xsd:documentation source="description" xml:lang="en">FQTV Program Sponsoring Airline.  Example: BA
-
-Encoding Scheme: IATA/ A4A (two or three character) Airline Designator Code</xsd:documentation>
-									</xsd:annotation>
-								</xsd:element>
-								<xsd:element name="Account" minOccurs="0">
-									<xsd:annotation>
-										<xsd:documentation source="description" xml:lang="en">Traveler FQTV Account information.</xsd:documentation>
-									</xsd:annotation>
-									<xsd:complexType>
-										<xsd:sequence>
-											<xsd:element name="Number" type="xsd:string" minOccurs="0">
-												<xsd:annotation>
-													<xsd:documentation source="description" xml:lang="en">FQTV account number.
-Example: FQTV123456</xsd:documentation>
-												</xsd:annotation>
-											</xsd:element>
-											<xsd:element name="FQTVStatus" type="xsd:string" minOccurs="0">
-												<xsd:annotation>
-													<xsd:documentation>Frequent flyer tier status. Example: "Altitude Elite 100K"</xsd:documentation>
-												</xsd:annotation>
-											</xsd:element>
-										</xsd:sequence>
-									</xsd:complexType>
-								</xsd:element>
-								<xsd:element name="ProgramID" type="xsd:string" minOccurs="0">
-									<xsd:annotation>
-										<xsd:documentation>The Program ID will be used to specify Frequent Flyer Program. This will be the name of the program</xsd:documentation>
-									</xsd:annotation>
-								</xsd:element>
-								<xsd:element name="AccountAddress" type="AddressContactType" minOccurs="0">
-									<xsd:annotation>
-										<xsd:documentation source="description" xml:lang="en">Address Contact.</xsd:documentation>
-									</xsd:annotation>
-								</xsd:element>
-							</xsd:sequence>
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="Gender" minOccurs="0">
-						<xsd:annotation>
-							<xsd:documentation source="description" xml:lang="en">Passenger Gender
-Example: Male</xsd:documentation>
-						</xsd:annotation>
-						<xsd:complexType>
-							<xsd:simpleContent>
-								<xsd:extension base="TravelerGenderSimpleType"/>
-							</xsd:simpleContent>
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="IdentityDocument" minOccurs="0" maxOccurs="unbounded">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="Type" type="CodesetValueSimpleType">
-									<xsd:annotation>
-										<xsd:documentation source="description" xml:lang="en">The type of passenger document. 
-Examples: PT (Passport), VI (Visa), 7TR (Transit visa)
-Encoding schema: PADIS 7365, Processing indicator, coded.</xsd:documentation>
-									</xsd:annotation>
-								</xsd:element>
-								<xsd:element name="ID" type="UniqueStringID_SimpleType">
-									<xsd:annotation>
-										<xsd:documentation source="description" xml:lang="en">Document ID value. Example: NY122345</xsd:documentation>
-									</xsd:annotation>
-								</xsd:element>
-								<xsd:element name="CountryOfBirth" type="xsd:string" minOccurs="0">
-									<xsd:annotation>
-										<xsd:documentation>Country of Birth. Country Name or Code. For Example. Germany, DE</xsd:documentation>
-									</xsd:annotation>
-								</xsd:element>
-								<xsd:element name="DateOfIssue" type="xsd:date">
-									<xsd:annotation>
-										<xsd:documentation>Date of Issue. Example: 2017-01-13</xsd:documentation>
-									</xsd:annotation>
-								</xsd:element>
-								<xsd:element name="DateOfExpiration" type="xsd:date" minOccurs="0">
-									<xsd:annotation>
-										<xsd:documentation>Date of expiration. Example: 2017-01-13</xsd:documentation>
-									</xsd:annotation>
-								</xsd:element>
-								<xsd:element name="CountryOfIssuance" type="xsd:string" minOccurs="0">
-									<xsd:annotation>
-										<xsd:documentation>Country name from where the document has been issued.</xsd:documentation>
-									</xsd:annotation>
-								</xsd:element>
-								<xsd:element name="CountryOfResidence" type="xsd:string" minOccurs="0">
-									<xsd:annotation>
-										<xsd:documentation>Country where passenger resides.</xsd:documentation>
-									</xsd:annotation>
-								</xsd:element>
-								<xsd:element name="Issuer" type="xsd:string"/>
-								<xsd:element name="Definition" type="xsd:string" minOccurs="0"/>
-							</xsd:sequence>
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:sequence>
-				<xsd:attribute name="PassengerID" type="xsd:ID" use="optional">
-					<xsd:annotation>
-						<xsd:documentation source="description" xml:lang="en">Object globally unique Instance ID. Example: obj1</xsd:documentation>
-					</xsd:annotation>
-				</xsd:attribute>
-				<xsd:attribute name="ConsentInd" type="xsd:boolean" use="optional">
-					<xsd:annotation>
-						<xsd:documentation>When TRUE, passenger authorize the airline to share his/her profile information or send promotional emails.</xsd:documentation>
-					</xsd:annotation>
-				</xsd:attribute>
-			</xsd:extension>
-		</xsd:complexContent>
-	</xsd:complexType>
-	<xsd:complexType name="PassengerDetailType">
-		<xsd:annotation>
-			<xsd:documentation source="description" xml:lang="en">A data type for DETAIL PASSENGER representation.</xsd:documentation>
-		</xsd:annotation>
-		<xsd:complexContent>
-			<xsd:extension base="PassengerSummaryType"/>
-		</xsd:complexContent>
 	</xsd:complexType>
 	<!--====================================================
 ===  G R O U P
@@ -4998,12 +4784,20 @@ Encoding scheme: IATA PADIS Codeset IPT - Instant Purchase Type</xsd:documentati
 				<xsd:annotation>
 					<xsd:documentation>Choice to determine if the information of this ServiceDefinition needs to be extended with specific Bag or Seat characteristics, or whether the ServiceDefinition is used as a bundle of further ServiceDefinitions.</xsd:documentation>
 				</xsd:annotation>
-				<xsd:element name="CarryOnAllowance">
+				<xsd:element name="BaggageAllowance">
 					<xsd:annotation>
-						<xsd:documentation source="description" xml:lang="en">Carry-on Allowance detail.</xsd:documentation>
+						<xsd:documentation source="description" xml:lang="en">Checked or Carry-On Baggage Allowance detail. Use BaggageCategory to specify which of the two.</xsd:documentation>
 					</xsd:annotation>
 					<xsd:complexType>
 						<xsd:sequence>
+							<xsd:element name="BaggageCategory" type="xsd:string">
+								<xsd:annotation>
+									<xsd:documentation>Enumeration:
+
+CarryOn
+Checked</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
 							<xsd:element ref="AllowanceDescription" minOccurs="0"/>
 							<xsd:element ref="DimensionAllowance" minOccurs="0"/>
 							<xsd:element ref="PieceAllowance" minOccurs="0" maxOccurs="unbounded"/>
@@ -5014,26 +4808,7 @@ Encoding scheme: IATA PADIS Codeset IPT - Instant Purchase Type</xsd:documentati
 								</xsd:annotation>
 							</xsd:element>
 						</xsd:sequence>
-						<xsd:attributeGroup ref="DataListObjAttrGroup"/>
-					</xsd:complexType>
-				</xsd:element>
-				<xsd:element name="CheckedBagAllowance">
-					<xsd:annotation>
-						<xsd:documentation source="description" xml:lang="en">Checked Bag Allowance detail.</xsd:documentation>
-					</xsd:annotation>
-					<xsd:complexType>
-						<xsd:sequence>
-							<xsd:element ref="AllowanceDescription" minOccurs="0"/>
-							<xsd:element ref="DimensionAllowance" minOccurs="0"/>
-							<xsd:element ref="PieceAllowance" minOccurs="0" maxOccurs="unbounded"/>
-							<xsd:element ref="WeightAllowance" minOccurs="0"/>
-							<xsd:element name="BaggageDeterminingCarrier" type="BaggageDeterminingCarrierType" minOccurs="0">
-								<xsd:annotation>
-									<xsd:documentation>Baggage Determining Carrier as defined in resolution 722 (f), and who’s baggage rules apply.</xsd:documentation>
-								</xsd:annotation>
-							</xsd:element>
-						</xsd:sequence>
-						<xsd:attributeGroup ref="DataListObjAttrGroup"/>
+						<xsd:attribute name="BaggageAllowanceID" type="xsd:ID" use="required"/>
 					</xsd:complexType>
 				</xsd:element>
 				<xsd:element name="Seat">
