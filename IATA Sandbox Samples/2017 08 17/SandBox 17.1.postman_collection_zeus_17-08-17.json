@@ -49,7 +49,7 @@
 	"requests": [
 		{
 			"id": "07ac4373-503b-49d6-611c-9256471cec2a",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -86,7 +86,7 @@
 		},
 		{
 			"id": "13db6cc0-0d96-f851-4405-da98cc6cff43",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -123,7 +123,7 @@
 		},
 		{
 			"id": "245a27d6-a76c-a965-89e0-29d959b1ec5a",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -160,7 +160,7 @@
 		},
 		{
 			"id": "24e2f29d-2c2d-ac2b-5809-774ec4621a79",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -197,7 +197,7 @@
 		},
 		{
 			"id": "6174f1a0-c11f-40eb-de9e-c4eda2c67fc4",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -234,7 +234,7 @@
 		},
 		{
 			"id": "85b9091e-dbd0-7383-dba7-c8fdcdf93d5c",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -271,7 +271,7 @@
 		},
 		{
 			"id": "889f39fd-0773-d511-132c-556e326184fc",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -308,7 +308,7 @@
 		},
 		{
 			"id": "89bf7615-a0bf-398b-0656-3a024b08a8f5",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -345,7 +345,7 @@
 		},
 		{
 			"id": "a36c2e2a-a9f3-ea02-a135-34d969b9b450",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -380,7 +380,7 @@
 		},
 		{
 			"id": "b6b9afac-b450-7bf5-1612-a1f7a87572e6",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -417,7 +417,7 @@
 		},
 		{
 			"id": "bf4ad81f-ddc1-57cf-dffb-a6e1e7743c85",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -454,7 +454,7 @@
 		},
 		{
 			"id": "d3730141-390e-4b12-e177-89a717d1c2a9",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -489,7 +489,7 @@
 		},
 		{
 			"id": "dbf26429-925f-953b-1c4a-4c1039c9ca2e",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -524,7 +524,7 @@
 		},
 		{
 			"id": "e65880cc-660f-a155-c180-4210dbeb2283",
-			"headers": "Content-Type: application/xml\n",
+			"headers": "Content-Type: application/xml\nAuthorization-key: {{Authorization-key}}\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
