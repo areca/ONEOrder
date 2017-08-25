@@ -8,7 +8,7 @@
 
 ### Prerequisites
 
-In order to use the ONE Order sandbox, you need to :
+In order to use the ONE Order sandbox test samples, you need to :
 
 - Request for an API Key in order to use IATA NDC and ONE Order APIs sandboxes - http://iata.mashery.com/member/register
 - set your API key as a global variable as expected by the samples headers ({{Authorization-key}}) - (Postman documentation: https://www.getpostman.com/docs/postman/environments_and_globals/variables)
