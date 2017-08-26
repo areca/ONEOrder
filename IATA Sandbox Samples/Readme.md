@@ -25,10 +25,11 @@ In order to use the ONE Order sandbox test samples, you need to :
 [List of services details](./ZeusServicesAug2017.xlsx)
 
 When using per example IATA_ServiceDeliveryRQ with Service type:
+```
 <ServiceType>
 	<Code>BAG</Code>
 </ServiceType>
-
+```
 
 Please use the following list of codes:
 - MEL : Meal
