@@ -21,3 +21,25 @@ In order to use the ONE Order sandbox test samples, you need to :
 - use github samples in this folder
 
 
+### Service Types and details
+[List of services details](./ZeusServicesAug2017.xlsx)
+
+When using per example IATA_ServiceDeliveryRQ with Service type:
+<ServiceType>
+			<Code>BAG</Code>
+</ServiceType>
+
+
+Please use the following list of codes:
+- MEL : Meal
+- CON : Wifi
+- BAG : Bag services
+- GRN : Lounge Pass
+- SET : Seat selection
+- LNP : Lounge Pass
+- FTR : Fast Track
+- GRN : Parking Service
+- CRE : Car Rental
+- TRS : Ground Transport Concierge
+- VIP : VIP services
+
