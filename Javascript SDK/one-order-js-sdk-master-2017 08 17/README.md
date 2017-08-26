@@ -37,15 +37,13 @@ var oo = new OO(require('./config.json'));
 
 /* order's available service for type 'BAG' */
 var reqData = {
-  Service: {
+Order: {
+      _OrderID: 'A12346VR8'	  
+	  },
+Service: {
       ServiceType: {
-          RFIC: {
-              Code: 'BAG'
-          }
-      },
-  },
-  Order: {
-      _OrderID: 'D127V5'
+         	  Code: 'BAG'
+	      }
   }
 };
 
