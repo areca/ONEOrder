@@ -8,10 +8,8 @@ Order: {
 	  },
 Service: {
       ServiceType: {
-          RFIC: {
-		  Code: 'BAG'
-		  }
-      }
+         	  Code: 'BAG'
+	      }
   }
 };
 
