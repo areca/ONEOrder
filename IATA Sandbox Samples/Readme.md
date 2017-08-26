@@ -26,7 +26,7 @@ In order to use the ONE Order sandbox test samples, you need to :
 
 When using per example IATA_ServiceDeliveryRQ with Service type:
 <ServiceType>
-			<Code>BAG</Code>
+	<Code>BAG</Code>
 </ServiceType>
 
 
