@@ -21,12 +21,12 @@ In order to use the ONE Order sandbox test samples, you need to :
 - use github samples in this folder
 
 ### Service Statuses
+- Service Delivery ```READY TO PROCEED``` - Airline is in a position to start delivery of the Service, or in a position to allow a Delivery Provider to prepare the service
 - Service Delivery ```DELIVERY IN PROGRESS``` - The delivery provider is in control of the Service delivery.
 - Service Delivery ```DELIVERED```	- Service has been successfully delivered.
 - Service Delivery ```DELIVERED to Passenger``` - Service has been successfully delivered to the Passenger.
 - Service Delivery ```NOT CLAIMED``` (because of Passenger) - For reasons as a result of passenger action or inaction such as Passenger no-show 
 - Service Delivery ```FAILED TO DELIVER``` (because of Airline)	- Service could not be delivered due to airlines or provider limitations.
-- Service Delivery ```READY TO PROCEED``` - Airline is in a position to start delivery of the Service, or in a position to allow a Delivery Provider to prepare the service
 - Service Delivery ```READY FOR DELIVERY``` (Provider Ready for Delivery) - Provider is in a position to start delivery of the Service.
 - Service Delivery ```NOTIFICATION TO PROVIDER IS SENT``` - Delivery provider was successfully informed about the Service he has to deliver.
 - Service Delivery ```READY FOR DELIVERY ON-BOARD``` - Delivery provider (cabin crew) is in a position to start delivery of the Service.
