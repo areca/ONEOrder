@@ -15,7 +15,7 @@ In order to use the ONE Order sandbox test samples, you need to :
 
 - look at the test guide : [ONE Order Sandbox How_to Guide](./ONE%20Order%20Sandbox%20How_to%20Guide.pdf)
 - look at the sandbox content : https://airtechzone.iata.org/docs/ONE_Order_Sandbox_Brochure_ZEUS_Airlines_Z9.pdf
-- look at other information about the sandbox here: http://airtechzone.iata.org/OO_sandbox.html
+- look at other information about the sandbox here: https://airtechzone.iata.org/toolbox/oo-sandbox/#specs
 
 
 - use github samples in this folder
