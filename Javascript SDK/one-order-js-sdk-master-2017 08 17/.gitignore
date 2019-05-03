@@ -1,7 +1,0 @@
-config.json
-logs
-*.log
-node_modules
-.editorconfig
-.jshintrc
-.travis.yml
